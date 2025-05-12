@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEDAI MOMIW SAYUR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            width: 85%;
+            margin: 30px auto;
+        }
+
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .product-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px;
+            width: 30%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.3em;
+        }
+
+        .product-card p {
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .contact-btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .contact-btn:hover {
+            background-color: #45a049;
+        }
+
+        .order-form {
+            background-color: white;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .order-form input, .order-form select, .order-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .order-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-form button:hover {
+            background-color: #45a049;
+        }
+
+        .testimonials {
+            background-color: #e9f9e9;
+            padding: 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .testimonial-card {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial-card h4 {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        
+        .filter-container {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .filter-container select {
+            padding: 10px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>KEDAI MOMIW SAYUR</h1>
+        <p>Sayuran Segar dan Terpercaya siap antar depan rumah harga tepercaya</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#catalog">Katalog</a>
+        <a href="#order">Pemesanan</a>
+        <a href="#testimonials">Testimoni</a>
+        <a href="#contact">Kontak</a>
+        <a href="#home">Area</a>
+	<a href="#testimonials">Prodak Lainnya</a>
+
+    </nav>
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Putar Musik</title>
+</head>
+<body>
+    <h1></h1>
+    <p></p>
+
+<center>    
+<!-- Pemutar Audio -->
+    <audio controls>
+        <source src="musik.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung tag audio.
+    </audio> </center>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Putar Musik Otomatis</title>
+</head>
+<body>
+    <h1></h1>
+    
+
+    <!-- Pemutar Audio Otomatis dan Tersembunyi -->
+    <audio autoplay muted loop hidden>
+        <source src="musik.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+</body>
+</html>
+
+
+
+    <!-- Main Content -->
+    <div class="container" id="home">
+
+	<style>
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 25
+s linear infinite;
+}
+
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+</style>
+
+<div class="marquee">
+    <span class="marquee-text">
+        Selamat Datang di MOMIW SAYUR! Sayur segar, murah, dan berkualitas! 🌱
+    </span>
+</div>
+	
+
+        <center><p>Hallo Sahabat Momiw .Temukan Berbagai Jenis Sayuran Segar Yang Kami Tawarkan.</p></center>
+
+	<center><img src="iqbal.jpeg" alt="Toko Sayur Segar" width="100" height: auto;"></center>
+	</div>
+	<input type="text" id="searchBox" placeholder="Telusuri sayur momiw..." onkeyup="searchProduct()" style="width: 100%; padding: 10px; margin: 20px 0; border-radius: 5px;">
+
+<!-- Script Pencarian -->
+<script>
+    function searchProduct() {
+        const input = document.getElementById("searchBox").value.toLowerCase();
+        const productCards = document.querySelectorAll("#productList .product-card");
+
+        productCards.forEach(card => {
+            const title = card.querySelector("h3").textContent.toLowerCase();
+            if (title.includes(input)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+</script>
+
+	
+      <center>  <!-- Berbagai Macam Produk -->
+        <div class="filter-container">
+            <h3>Berbagai Macam Produk </h3>
+            <select id="filterCategory">
+                <option value="all">Semua Produk</option>
+                <option value="vegetable">Sayuran</option>
+                <option value="fruit">Buah Buahan</option>
+                <option value="seasoning">Bumbu Dapur</option>
+		<option value="cow">Sapi</option>
+		<option value="chicken">Ayam </option>
+		<option value="fish">Ikan</option>
+
+            </select>
+        </div> </center>
+
+        <!-- Katalog Produk -->
+        <div class="products" id="catalog">
+            <div class="product-card" data-category="vegetable">
+                <img src="bayam.jpg" alt="Bayam">
+                <h3>Bayam</h3>
+                <p>Rp5.000 / ikat</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Bayam" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+            <div class="product-card" data-category="vegetable">
+                <img src="kangkung.jpg" alt="Kangkung">
+                <h3>Kangkung</h3>
+                <p>Rp4.000 / ikat</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Kangkung" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+            <div class="product-card" data-category="vegetable">
+                <img src="tomat.jpg" alt="Tomat">
+                <h3>Tomat</h3>
+                <p>Rp8.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Tomat" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+            <div class="product-card" data-category="vegetable">
+                <img src="cabai.jpg" alt="Cabai Merah">
+                <h3>Cabai Merah</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="rawit merah.jpg" alt="Rawit Merah">
+                <h3>Rawit Merah Merah</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="kritingmerah.jpg" alt="Kriting Merah">
+                <h3>Kriting Merah</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="cabegendot.jpg" alt="Cabai gendot">
+                <h3>Cabai Gendot</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="waluh.jpg" alt="Waluh">
+                <h3>Waluh</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="pecay.jpeg" alt="Pecay">
+                <h3>Pecay</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="kol.jpeg" alt="Kol">
+                <h3>Kol</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="wortel.jpeg" alt="Wortel">
+                <h3>Wortel</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="bonteng.jpeg" alt="Bonteng">
+                <h3>Bonteng</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="terong.jpeg" alt="Terong ">
+                <h3>Terong</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="terongbulat.jpeg" alt="Terong Bulat">
+                <h3>Terong Bulat</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="jamurtiram.jpeg" alt="Jamur Tiram">
+                <h3>Jamur Tiram</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="jamurkuping.jpeg" alt="Jamur Kuping">
+                <h3>Jamur Kuping</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="jamurenoki.jpeg" alt="Jamur Enoki">
+                <h3>Jamur Enoki</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="bayam.jpg" alt="Bayam">
+                <h3>Bayam</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="kangkung.jpg" alt="Kangkung">
+                <h3>Kangkung</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="pakcoy.jpeg" alt="Fakcoy">
+                <h3>Pakcoy</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="sosin.jpeg" alt="Sosin">
+                <h3>Sosin</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="kacangpanjang.jpeg" alt="Kacang Panjang">
+                <h3>kacang panjang</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="buncis.jpg" alt="Buncis">
+                <h3>buncis</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="bawangdaun.jpeg" alt="Bawang daun">
+                <h3>bawang daun</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="bawangmerah.jpeg" alt="Bawang Merah">
+                <h3>Bawang Merah</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="bawangputih.jpeg" alt="Bawang Putih">
+                <h3>bawang putih</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="kentang dieng.jpeg" alt="Kentang Dieng">
+                <h3>kentang dieng</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="kentang dieng.jpeg" alt="kentang">
+                <h3>kentang</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="waluh.jpg" alt="Waluh">
+                <h3>Waluh</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="toge.jpeg" alt="Toge">
+                <h3>Toge</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="salam.jpeg" alt="Salam Sereh">
+                <h3>Salam Sereh</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="vegetable">
+                <img src="bonteng.jpeg" alt="Bonteng">
+                <h3>Bonteng</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="fruit">
+                <img src="semangka.jpeg" alt="Semangka">
+                <h3>Semangka</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="fruit">
+                <img src="jeruk.jpeg" alt="Jeruk">
+                <h3>Jeruk</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="fruit">
+                <img src="pepaya.jpeg" alt="Pepaya">
+                <h3>Pepaya</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="fruit">
+                <img src="melon.jpeg" alt="Melon">
+                <h3>Melon</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="fruit">
+                <img src="anggur.jpeg" alt="Anggur">
+
+                <h3>Anggur</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="seasoning">
+                <img src="masako.jpeg" alt="Masako ayam">
+                <h3>Masako ayam / sapi </h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="seasoning">
+                <img src="roycoayam.jpeg" alt="Royco ayam">
+                <h3>Royco ayam/sapi</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="seasoning">
+                <img src="garam.jpeg" alt="Garam">
+                <h3>Garam</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="seasoning">
+                <img src="pecin.jpeg" alt="Pecin">
+                <h3>Pecin</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="seasoning">
+                <img src="santan.jpeg" alt="Santan">
+                <h3>Santan</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="seasoning">
+                <img src="lada.jpeg" alt="Lada bubuk">
+                <h3>Lada Bubuk</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="seasoning">
+                <img src="desaku.jpeg" alt="kunyit">
+                <h3>Kunyit</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="seasoning">
+                <img src="kecap.jpeg" alt="kecap">
+                <h3>kecap</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="seasoning">
+                <img src="minyak.jpeg" alt="minyak">
+                <h3>minyak</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="seasoning">
+                <img src="racik.jpeg" alt="bumbu racik">
+                <h3>Bumbu Racik</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+
+<div class="product-card" data-category="seasoning">
+                <img src="terasi.jpeg" alt="terasi">
+                <h3>Terasi</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="seasoning">
+                <img src="saori.jpeg" alt="saori">
+                <h3>Saori</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="seasoning">
+                <img src="gula.jpeg" alt="gula putih">
+                <h3>gula putih</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="seasoning">
+                <img src="gulam.jpeg" alt="Gula merah">
+                <h3>Gula merah</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="cow">
+                <img src="sapi.jpg" alt="Daging Sapi">
+                <h3>Daging Sapi</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+<div class="product-card" data-category="chicken">
+                <img src="ayam.jpeg" alt="Ayam">
+                <h3>Ayam</h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+<div class="product-card" data-category="fish">
+                <img src="nila.jpeg" alt="ikan nila">
+                <h3>Ikan Nila </h3>
+                <p>Rp28.000 / kg</p>
+                <a href="https://wa.me/+6288218611174?text=Pesan%20Cabai%20Merah" class="contact-btn">Pesan Sekarang via WhatsApp</a>
+            </div>
+
+
+        </div>
+
+        
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Pemesanan MOMIW SAYUR</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #25D366;
+            color: white;
+            padding: 12px;
+            margin-top: 15px;
+            width: 100%;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #1eb75c;
+        }
+
+        h2 {
+            text-align: center;
+            color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+<!-- Form Pemesanan Lengkap -->
+<div class="order-form" id="order" style="max-width: 500px; margin: auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 3px 6px rgba(0,0,0,0.1);">
+    <h3 style="text-align: center; color: #4CAF50;">Form Pemesanan MOMIW SAYUR</h3>
+    <input type="text" id="nama" placeholder="Nama Lengkap" required>
+    <textarea id="alamat" placeholder="Alamat Pengiriman" required></textarea>
+    <textarea id="pesanan" placeholder="Contoh: Bayam 2 ikat, Tomat 1 kg" required></textarea>
+
+    <label for="pembayaran" style="margin-top: 10px;">Metode Pembayaran:</label>
+    <select id="pembayaran" required style="width: 100%; padding: 10px; margin-bottom: 15px; border-radius: 5px; border: 1px solid #ccc;">
+        <option value="">Pilih...</option>
+        <option value="COD (Bayar di Tempat)">COD (Bayar di Tempat)</option>
+        <option value="Transfer Bank">Transfer Bank</option>
+    </select>
+
+    <button onclick="kirimPesan()" style="background-color: #25D366; color: white; padding: 12px; width: 100%; border: none; border-radius: 5px; font-size: 16px;">Kirim via WhatsApp</button>
+</div>
+
+<script>
+function kirimPesan() {
+    var nama = document.getElementById("nama").value;
+    var alamat = document.getElementById("alamat").value;
+    var pesanan = document.getElementById("pesanan").value;
+    var pembayaran = document.getElementById("pembayaran").value;
+
+    if (nama && alamat && pesanan && pembayaran) {
+        var pesan = `Halo MOMIW SAYUR,%0ASaya ingin memesan:%0A${pesanan}%0A%0ANama: ${nama}%0AAlamat: ${alamat}%0AMetode Pembayaran: ${pembayaran}%0A%0ATerima kasih!`;
+        var nomor = "+6288218611174"; // ganti nomor WA kamu di sini
+        var url = `https://wa.me/${nomor}?text=${encodeURI(pesan)}`;
+        window.open(url, '_blank');
+    } else {
+        alert("Mohon lengkapi semua kolom terlebih dahulu.");
+    }
+}
+</script>
+
+
+<script>
+function kirimPesan() {
+    var nama = document.getElementById("nama").value;
+    var alamat = document.getElementById("alamat").value;
+    var pesanan = document.getElementById("pesanan").value;
+    var pembayaran = document.getElementById("pembayaran").value;
+
+    if (nama && alamat && pesanan && pembayaran) {
+        var pesan = `Assalamualaikum MOMIW SAYUR,Saya ingin pesan nih:${pesanan}Nama: ${nama}Alamat: ${alamat}Metode Pembayaran: ${pembayaran}Hatur Nuhun :)!`;
+        var nomor = "+6288218611174"; // ganti nomor WA kamu di sini
+        var url = `https://wa.me/${nomor}?text=${encodeURI(pesan)}`;
+        window.open(url, '_blank');
+    } else {
+        alert("Mohon lengkapi semua kolom terlebih dahulu.");
+    }
+}
+</script>
+
+
+</body>
+</html>
+
+
+        <!-- Testimoni Pelanggan -->
+        <div class="testimonials" id="testimonials">
+            <h3>Testimoni Pelanggan</h3>
+            <div class="testimonial-card">
+                <p>"Sayurannya selalu segar dan harganya terjangkau. Pelayanan cepat dan ramah!"</p>
+                <h4>M iqbal Syuhada, Padalarang</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Saya suka belanja di MOMIW SAYUR, kualitas produk selalu terjaga!"</p>
+                <h4>Putri, Bandung</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" id="contact">
+        <p>&copy; 2025 MOMIW SAYUR | Jl. Perumahan PosGiro Ciampel RT 7/3, Padalarang</p>
+    </div>
+
+    <!-- JavaScript untuk Filter Katalog -->
+    <script>
+        const filterCategory = document.getElementById('filterCategory');
+        const productCards = document.querySelectorAll('.product-card');
+
+        filterCategory.addEventListener('change', (e) => {
+            const category = e.target.value;
+            productCards.forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
